@@ -1,3 +1,9 @@
+****
+Nombre | Código
+--- | --- | ---
+Esteban Durán | 12103025 
+****
+
 #Instalación
 
 Para la ejecución de los ejercicios se emplearán entornos virtuales.
