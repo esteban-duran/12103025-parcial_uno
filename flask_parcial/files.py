@@ -1,23 +1,21 @@
 from flask import Flask, abort, request
-import json
+import json, os
 
-from files_commands import get_all_files, add_file, remove_file, get_all_recent_files
+from files_commands import get_all_files, remove_file, get_all_recent_files
 
 app = Flask(__name__)
 
 @app.route('/files', methods=['POST'])
 def create_file():
-  contenido = request.get_json(silent=True)
-  filename = contenido['filename']
-  content = contenido['contet']
-  if not filename:
-    return "Empty filename", 400
-  if filename in get_all_files():
-    return "File overwritten", 201
-  if add_file(filename,content):
-    return "File created", 201
-  else:
-    return "Error while creating file", 400
+  content = request.get_json(silent=True)
+  filename = content['filename']
+  content = content['content']
+  os.chdir('files_created')
+  add_process = open(filename+'.txt','a')
+  add_process.write(content+'\n')
+  add_process.close()
+  os.chdir('..')
+  return "File created",201
 
 @app.route('/files', methods=['GET'])
 def read_file():
