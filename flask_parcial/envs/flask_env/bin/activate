@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/filesystem_user/envs/flask_env"
+VIRTUAL_ENV="/home/filesystem_user/12103025-parcial_uno/flask_parcial/envs/flask_env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
