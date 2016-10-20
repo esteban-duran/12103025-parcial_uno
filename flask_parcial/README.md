@@ -134,3 +134,4 @@ def get_all_recent_files():
 ```
 
 ###Pruebas del servicio web (REST)
+![alt text](https://github.com/esteban-duran/threads/blob/master/diagrama_clases_v0.2.0.png "Diagrama de clases")
