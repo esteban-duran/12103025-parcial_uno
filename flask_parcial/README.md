@@ -134,4 +134,14 @@ def get_all_recent_files():
 ```
 
 ###Pruebas del servicio web (REST)
-![alt text](https://github.com/esteban-duran/threads/blob/master/diagrama_clases_v0.2.0.png "Diagrama de clases")
+#### files
+![alt text](https://github.com/esteban-duran/12103025-parcial_uno/flask_parcial/images/files_GET.PNG "GET")
+![alt text](https://github.com/esteban-duran/12103025-parcial_uno/flask_parcial/images/files_POST.PNG "GET")
+![alt text](https://github.com/esteban-duran/12103025-parcial_uno/flask_parcial/images/files_PUT.PNG "GET")
+![alt text](https://github.com/esteban-duran/12103025-parcial_uno/flask_parcial/images/files_DELETE.PNG "GET")
+
+#### files/recently_created
+![alt text](https://github.com/esteban-duran/12103025-parcial_uno/flask_parcial/images/rc_GET.PNG "GET")
+![alt text](https://github.com/esteban-duran/12103025-parcial_uno/flask_parcial/images/rc_POST.PNG "GET")
+![alt text](https://github.com/esteban-duran/12103025-parcial_uno/flask_parcial/images/rc_PUT.PNG "GET")
+![alt text](https://github.com/esteban-duran/12103025-parcial_uno/flask_parcial/images/rc_DELETE.PNG "GET")
