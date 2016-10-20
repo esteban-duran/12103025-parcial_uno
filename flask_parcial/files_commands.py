@@ -1,7 +1,7 @@
 from subprocess import Popen, PIPE
 
 def get_all_files():
-  file_list = Popen(["ls","-a"], stdout=PIPE, stderr=PIPE).communicate()[0].split('\n')
+  file_list = Popen(('ls','files_created'), stdout=PIPE, stderr=PIPE).communicate()[0].split('\n')
   return filter(None,file_list)
 
 def add_file(filename,content):
@@ -16,7 +16,6 @@ def remove_file(filename):
     return False if filename in get_all_files() else True
 
 def get_all_recent_files():
-  cd_process = Popen(["sudo","cd","files_created"], stdout=PIPE, stderr=PIPE)
-  file_list = Popen(["ls","-a"], stdout=PIPE, stderr=PIPE).communicate()[0].split('\n')
+  file_list = Popen(('ls','files_created','-t'), stdout=PIPE, stderr=PIPE).communicate()[0].split('\n')
   return filter(None,file_list)
 
