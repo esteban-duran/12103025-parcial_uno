@@ -145,3 +145,7 @@ def get_all_recent_files():
 ![alt text](https://github.com/esteban-duran/12103025-parcial_uno/blob/master/flask_parcial/images/rc_POST.PNG "POST")
 ![alt text](https://github.com/esteban-duran/12103025-parcial_uno/blob/master/flask_parcial/images/rc_PUT.PNG "PUT")
 ![alt text](https://github.com/esteban-duran/12103025-parcial_uno/blob/master/flask_parcial/images/rc_DELETE.PNG "DELETE")
+
+
+#Dirección al github de la soluciónn
+https://github.com/esteban-duran/12103025-parcial_uno
